@@ -1,0 +1,31 @@
+﻿{
+  "Name": "AutoFrontPublishProfile",
+  "Steps": [
+    // 1) At this phase we
+    {
+      "Name": "GitService",
+      "Methods": [
+        {
+          "Name": "PullChanges",
+          "Params": {
+            "SourceDirectory": "Development",
+            "BranchName": "master"
+          }
+        }
+      ]
+    },
+    //2) Publish Asp.Net Website  Project
+    {
+      "Name": "DotNetFrameWorkPublishService",
+      "Methods": [
+        {
+          "Name": "Publish",
+          "Params": {
+            "ProjectDirectory": "D:\\MachineLearningSnippets\\machinelearning-samples-main",
+            "PublishDirectory": "D:\\MachineLearningSnippets\\machinelearning-samples-main\\images"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "AutoFrontPublishProfile",
+  "Steps": [
+    {
+      "Name": "DotNetFrameWorkPublishService",
+      "Methods": [
+        {
+          "Name": "Publish",
+          "Params": {
+            "ProjectDirectory": "D:\\MachineLearningSnippets\\machinelearning-samples-main",
+            "PublishDirectory": "D:\\MachineLearningSnippets\\machinelearning-samples-main\\images"
+          }
+        }
+      ]
+    }
+  ]
+}
